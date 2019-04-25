@@ -20,6 +20,9 @@ public class AccountDaoImpl implements IAccountDAO {
     @Override
     public int add(Account account) {
         System.out.println("jhhh");
+        System.out.println("eehjegeuygeygg2uwht");
+        System.out.println("wdwd");
+
         return jdbcTemplate.update("insert into account(name, money) values(?, ?)",
               account.getName(),account.getMoney());
 
