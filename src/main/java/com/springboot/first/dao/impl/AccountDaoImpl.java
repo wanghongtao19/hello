@@ -18,6 +18,7 @@ public class AccountDaoImpl implements IAccountDAO {
     private JdbcTemplate jdbcTemplate;
     @Override
     public int add(Account account) {
+        System.out.println("jhhh");
         return jdbcTemplate.update("insert into account(name, money) values(?, ?)",
               account.getName(),account.getMoney());
 
@@ -25,6 +26,7 @@ public class AccountDaoImpl implements IAccountDAO {
 
     @Override
     public int update(Account account) {
+
         return jdbcTemplate.update("UPDATE  account SET NAME=? ,money=? WHERE id=?",
                 account.getName(),account.getMoney(),account.getId());
     }
