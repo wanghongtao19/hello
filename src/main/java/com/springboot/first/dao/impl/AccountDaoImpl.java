@@ -19,6 +19,8 @@ public class AccountDaoImpl implements IAccountDAO {
     private JdbcTemplate jdbcTemplate;
     @Override
     public int add(Account account) {
+        System.out.println("我和他");
+        System.out.println("djwehdwj王洪涛");
         System.out.println("jhhh");
         System.out.println("eehjegeuygeygg2uwht");
         System.out.println("wdwd");
