@@ -27,6 +27,8 @@ public class HelloController {
     private int age;
     @RequestMapping(value = "/miya")
     public String miya(){
+        System.out.println("hello");
+
         return name+":"+age;
     }
 
